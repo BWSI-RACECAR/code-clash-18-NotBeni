@@ -42,7 +42,8 @@ class Solution:
         # return: bool
     
         # TODO: Write code below to return a bool with the solution to the prompt
-
+        print(cost)
+        print(pool)
         num = cost[0]
         cost = cost[1:]
         
