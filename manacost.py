@@ -42,8 +42,7 @@ class Solution:
         # return: bool
     
         # TODO: Write code below to return a bool with the solution to the prompt
-        print(pool)
-        print(cost)
+
         num = cost[0]
         cost = cost[1:]
         
@@ -52,11 +51,11 @@ class Solution:
                 pool = pool[0: pool.index(i)] + pool[pool.index(i)+1:]
                 cost = cost[0: cost.index(i)] + cost[cost.index(i)+1:]
         
-        if len(cost) > pool.count('C'):
+        '''if len(cost) > pool.count('C'):
             return False
         else:
             for _ in range(len(cost)):
-                pool = pool[0: pool.index('C')] + pool[pool.index('C')+1:]
+                pool = pool[0: pool.index('C')] + pool[pool.index('C')+1:]'''
         
         if len(pool) >= int(num):
             return True
